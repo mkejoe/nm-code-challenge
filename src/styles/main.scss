@@ -1,0 +1,46 @@
+@import './uitk.scss';
+
+@mixin breakpoint($class) {
+  @if $class == sm {
+    @media (max-width: 768px) { @content; }
+  }
+ 
+  @else if $class == md {
+    @media (max-width: 1024px) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: 1025px) { @content; }
+  }
+}
+
+.grid-container {
+    max-width: 1120px;
+    @include breakpoint(sm) {
+        margin: 15px;
+    }
+    @include breakpoint(md) {
+        margin: 15px;
+    }
+    @include breakpoint(lg) {
+        margin: 15px auto;
+    }
+}
+
+@include breakpoint(sm) {
+    .full-list {
+        display: none !important;
+    }
+}
+
+@include breakpoint(md) {
+    .full-list {
+        display: none !important;
+    }
+}
+
+@include breakpoint(lg) {
+    .full-list {
+        display: initial;
+    }
+}

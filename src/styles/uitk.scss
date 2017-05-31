@@ -1,0 +1,32 @@
+// UI toolkit import
+$include-html-classes: true;
+$include-lv-font-face-declarations: false;
+
+$include-lv-html-top-level-classes: true;
+$include-lv-html-utility-classes: true;
+$include-lv-html-button-classes: true;
+$include-lv-html-card-classes: true;
+$include-lv-html-type-classes: true;
+$include-lv-html-grid-classes: true;
+$include-lv-html-notification-classes: true;
+$include-lv-html-block-grid-classes: false;
+$include-lv-html-form-classes: true;
+$include-lv-html-icons-classes: false;
+$include-lv-html-keyval-charts-classes: false;
+$include-lv-html-label-classes: false;
+$include-lv-html-loading-indicators-classes: true;
+$include-lv-html-modals-classes: false;
+$include-lv-html-navigation-classes: true;
+$include-lv-html-select-button-classes: false;
+$include-lv-html-tables-classes: true;
+$include-lv-html-tabs-classes: false;
+$include-lv-html-visibility-classes: true;
+
+// Point asset paths to node_modules for `sass-loader`
+$asset-build-path: "~ui-toolkit/src";
+
+// IMPORT THEME
+@import "node_modules/ui-toolkit/src/scss/theme/nm";
+
+// IMPORT LV-FOUNDATION COMPONENTS
+@import "node_modules/ui-toolkit/src/scss/core";
